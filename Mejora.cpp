@@ -14,7 +14,7 @@ class Mejora{
 			this->multi;
 		}
 		
-		int Bono();
+		virtual int Bono()=0;
 		
 		~Mejora(){
 		}

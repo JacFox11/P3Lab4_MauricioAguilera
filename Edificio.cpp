@@ -6,12 +6,14 @@ using namespace std;
 class Edificio{
 	protected:
 		int galletas;
+		int c;
 	public:
 		Edificio(){
 		}
 		
-		Edificio(int galletas){
+		Edificio(int galletas, int c){
 			this->galletas=galletas;
+			this->c=c;
 		}
 		
 		int Producir(){
@@ -22,7 +24,7 @@ class Edificio{
 			this->galletas=galletas;
 		}
 		
-		int Caracteristica();
+		virtual int Caracteristica()=0;
 		
 		~Edificio(){
 		}

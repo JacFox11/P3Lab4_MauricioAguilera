@@ -6,11 +6,11 @@
 using namespace std;
 class Banco: public Edificio{
 	public:
-		Banco(): Edificio(15){
+		Banco(): Edificio(15,0){
 		}
 		
 		int Caracteristica(){
-			galletas+=1;
+			galletas=galletas+1;
 			return 0;
 		}
 		
